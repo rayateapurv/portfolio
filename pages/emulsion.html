@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Apurv Rayate</title>
+    <link rel="stylesheet" type="text/css" href="../styles/emulsion-style.css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+    
+<body>
+    <div class="nav-wrapper">
+        <div class="nav">
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/logo.png" alt="logo image">
+            </a>
+            <div class="nav-link">
+                <a href="../index.html">work</a>  
+                <a href="../pages/about.html">about</a>   
+            </div>  
+        </div>
+    </div> 
+
+    <section>
+        <div class="head">
+            <h1 class="title">Emulsion</h1>
+            <p class="subtitle">interactive audio-reactive fluid simulation with TouchDesigner</p>
+        </div>
+        <!-- <div class="links">
+            <a>Play!</a>
+            <a>Press-kit</a>
+        </div> -->
+        <div class="content">
+            <img src="../assets/img/em3.gif">
+            <p>
+                Emulsion is an interactive fluid simulation made using custom glsl shaders in TouchDesigner. 
+                The user can move the paintbrush around the screen using their hand (detected via MoveNet) while the state of the fluid changes to react to audio playing along with it. 
+                The kick from the music refreshes the cycle, setting the user's paint splat as the background and fading out the previous one. 
+                <br><br>
+                The textured 3D visual is inspired by hardening emulsion but made entirely using 2D shaders and feedback. 
+                MoveNet applied using Torin Blankensmith's No-Kinect MoveNet applet found <a href="https://github.com/torinmb/MoveNet-No-Kinect">here</a>.
+            </p>
+            <video controls>
+                <source src="../assets/video/em1.mp4"/>
+            </video>
+            <p>
+
+            </p>
+            <video muted controls>
+                <source src="../assets/video/em2.mov"/>
+            </video>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2022, Apurv Rayate. All rights reserved.</p>
+    </footer>
+
+    <div id="main">
+
+    </div>
+
+    
+</body>
+
+<script src="../scripts/emulsion.js"></script>
+
+</html> 
