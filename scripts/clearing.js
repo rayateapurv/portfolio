@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth, document.body.scrollHeight - 20);
+  createCanvas(window.innerWidth, document.body.scrollHeight - 100);
   document.querySelector(".p5Canvas").classList.add("maincan");
   let newDiv = document.createElement("div");
   newDiv.classList.add("canvas-div");

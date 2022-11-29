@@ -199,7 +199,8 @@ opacity: 0.7;
 }
 
 footer {
-    background-color: #5c5c5c;
+    position: absolute;
+    z-index: 3;
     padding: 20px;
     width: 100vw;
     height: 40px;
