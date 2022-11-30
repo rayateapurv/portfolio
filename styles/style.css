@@ -322,7 +322,7 @@ footer p {
 }
 
 .about-head {
-  padding-right: 50px;
+  /* padding-right: 50px; */
   font-size: 40px;
 }
 
@@ -342,8 +342,82 @@ footer p {
   height: auto;
 }
 
+.res-button {
+  display: inline-block;
+  left: 73%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #03989e;
+  border: none;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: futur;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.res-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.res-button:hover {
+  opacity: 0.7;
+  background-color: #03777b;
+}
+
 #role {
   color: #f2f2f2;
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    font-size: 1.0em;
+  }
+
+  .masthead .mast{
+    font-size: 3em;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .gallery {
+    height: auto;
+  }
+
+  .square-large {
+    width: 100%;
+    /* height: 300px; */
+  }
+
+  .about-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .res-button {
+    left: 65%;
+    width: 80px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  /* .about-head {
+    opacity: 0;
+  }
+
+  .about-img {
+    opacity: 0;
+  } */
+
+  footer {
+    position: relative;
+  }
 }
 
 
