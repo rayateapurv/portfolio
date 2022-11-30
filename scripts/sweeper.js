@@ -22,7 +22,7 @@ class Cell {
       } else if (this.ran > 1.4 && this.ran < 2) {
         image(mine, this.x, this.y, this.w, this.w);
         //mineSound.play();
-        location.reload();
+        //location.reload();
       } else {
         image(tom, this.x, this.y, this.w, this.w);
       }
