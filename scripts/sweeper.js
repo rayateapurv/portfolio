@@ -21,7 +21,7 @@ class Cell {
         image(entmine, this.x, this.y, this.w, this.w);
       } else if (this.ran > 1.4 && this.ran < 2) {
         image(mine, this.x, this.y, this.w, this.w);
-        mineSound.play();
+        //mineSound.play();
         location.reload();
       } else {
         image(tom, this.x, this.y, this.w, this.w);
