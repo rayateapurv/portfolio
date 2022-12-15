@@ -17,6 +17,12 @@ body {
   overflow-y: auto;
 }
 
+.site-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 section {
   transform-style: preserve-3d;
 }
