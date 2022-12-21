@@ -17,6 +17,12 @@ overflow-x: hidden;
 overflow-y: auto;
 }
 
+.site-wrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
 a {
 color: #f2f2f2;
 font-family: futur;
