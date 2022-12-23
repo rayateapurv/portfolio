@@ -8,10 +8,39 @@ let roles = [
 ];
 
 let role = document.querySelector("#role");
-let roleIndex = 1;
 
-setInterval(() => {
-  if (roleIndex >= roles.length) roleIndex = 0;
-  role.innerHTML = roles[roleIndex];
-  roleIndex++;
-}, 2000);
+let app = document.getElementById("role");
+
+let typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+let pause = 300;
+
+typewriter
+  .pauseFor(pause)
+  .typeString(roles[0])
+  .pauseFor(pause)
+  .deleteChars(roles[0].length)
+  .pauseFor(pause)
+  .typeString(roles[1])
+  .pauseFor(pause)
+  .deleteChars(roles[1].length)
+  .pauseFor(pause)
+  .typeString(roles[2])
+  .pauseFor(pause)
+  .deleteChars(roles[2].length)
+  .pauseFor(pause)
+  .typeString(roles[3])
+  .pauseFor(pause)
+  .deleteChars(roles[3].length)
+  .pauseFor(pause)
+  .typeString(roles[4])
+  .pauseFor(pause)
+  .deleteChars(roles[4].length)
+  .pauseFor(pause)
+  .typeString(roles[5])
+  .pauseFor(pause)
+  .deleteChars(roles[5].length)
+  .start();

@@ -44,14 +44,17 @@ h1 {
 }
 
 p {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: futur;
   font-weight: light;
   color: #f2f2f2;
   text-align: left;
   font-size: 20px;
   line-height: 40px;
+  background-color: #1c1a21;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 img {
@@ -66,14 +69,6 @@ video {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-p a {
-    color: #87CEEB;
-font-family: futur;
-font-weight: bold;
-text-decoration: underline;
-font-size: 20px;
 }
 
 .maincan {
@@ -166,6 +161,7 @@ opacity: 0.7;
     font-family: futur;
     font-weight: light;
     text-decoration: underline;
+    text-underline-offset: 5px;
     font-size: 40px;
 }
 
@@ -182,7 +178,7 @@ opacity: 0.7;
 .subtitle {
     color: #f2f2f2;
     margin-top: -30px;
-    margin-left: 60px;
+    margin-left: 70px;
     width: 300px;
     text-align: left;
 }

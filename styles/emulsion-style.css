@@ -173,6 +173,7 @@ opacity: 0.7;
     font-family: futur;
     font-weight: light;
     text-decoration: underline;
+    text-underline-offset: 5px;
     font-size: 40px;
 }
 
