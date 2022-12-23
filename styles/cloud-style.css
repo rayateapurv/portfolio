@@ -39,7 +39,7 @@ h1 {
   font-family: futur;
   font-weight: bold;
   color: #87CEEB;
-  text-align: center;
+  text-align: left;
   font-size: 50px;
 }
 
@@ -172,8 +172,15 @@ opacity: 0.7;
 
 .content{
     padding-top: 180px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.content p {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .title {
@@ -197,7 +204,7 @@ opacity: 0.7;
 
 .img-gallery img {
     display: block;
-    width: 48%;
+    width: 47.8%;
     height: auto;
 }
 
@@ -287,6 +294,8 @@ font-weight: light;
 
     .content {
         padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .img-gallery{

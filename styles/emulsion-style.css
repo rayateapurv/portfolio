@@ -38,7 +38,7 @@ opacity: 0.7;
 h1 {
   font-family: futur;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   font-size: 50px;
   background-clip: unset;
   background: -webkit-linear-gradient(-45deg, #0000ff, #ff00ff);
@@ -179,12 +179,17 @@ opacity: 0.7;
 
 .content{
     padding-top: 180px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.content p {
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .title {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 .subtitle {
@@ -273,6 +278,8 @@ font-weight: light;
 
     .content {
         padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .img-gallery{
