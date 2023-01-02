@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 @font-face {
     font-family: futur;
     src: url(/assets/fonts/FuturaPTMedium.otf);
@@ -36,10 +38,9 @@ opacity: 0.7;
 }
 
 h1 {
-  font-family: futur;
-  font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
   text-align: left;
-  font-size: 50px;
+  font-size: 60px;
   background-clip: unset;
   background: -webkit-linear-gradient(-45deg, #0000ff, #ff00ff);
   -webkit-background-clip: text;
@@ -50,8 +51,7 @@ h1 {
 p {
   /* padding-left: 25%; */
   padding-right: 20px;
-  font-family: futur;
-  font-weight: light;
+  font-family: "Helvetica Neue", sans-serif;
   color: #00cccc;
   text-align: left;
   font-size: 20px;
@@ -178,7 +178,7 @@ opacity: 0.7;
 }
 
 .content{
-    padding-top: 180px;
+    padding-top: 230px;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -195,7 +195,7 @@ opacity: 0.7;
 .subtitle {
     margin-top: -30px;
     margin-left: 105px;
-    width: 550px;
+    width: 650px;
     text-align: left;
     font-size: 24px;
 }

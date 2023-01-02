@@ -140,6 +140,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   background-color: #333333;
+  /* gap: 20px; */
   /* overflow-y: auto; */
 }
 
@@ -153,6 +154,7 @@ a:hover {
   width: 50%;
   height: auto;
   display: block;
+  transition: 1s ease-in-out;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   background-size:cover;
@@ -164,6 +166,7 @@ a:hover {
 .square-large:hover {
   -webkit-filter: none;
   filter: none;
+  transform: rotate(3deg) translate(0px, -30px);
 }
 
 .one {
@@ -291,7 +294,7 @@ footer p {
   bottom: 0px;
   right: 0px;
   z-index: 2;
-  background: rgba(54, 54, 54, 0.7);
+  background: rgba(54, 54, 54, 0.8);
 }
 
 .masthead video {
