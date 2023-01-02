@@ -238,6 +238,7 @@ padding: 20px;
 width: 100vw;
 height: 40px;
 display: flex;
+align-items: center;
 justify-content: center;
 }
 
@@ -274,12 +275,16 @@ font-weight: light;
     }
 
     .subtitle {
+        width: 300px;
         margin: 0;
         margin-top: 10px;
         margin-left: 20px;
         /* text-align: center; */
     }
 
+    .subtitle span {
+        line-height: 5px;
+    }
 
     .links {
         margin: 0;

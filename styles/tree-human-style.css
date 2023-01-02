@@ -212,6 +212,8 @@ padding: 20px;
 width: 100vw;
 height: 40px;
 display: flex;
+
+align-items: center;
 justify-content: center;
 }
 
@@ -251,6 +253,7 @@ font-weight: light;
     }
 
     .subtitle {
+        width: 300px;
         margin: 0;
         margin-left: 20px;
         /* text-align: center; */

@@ -218,6 +218,7 @@ position: relative;
 background-color: #2e8156;
 width: 100vw;
 display: flex;
+align-items: center;
 justify-content: center;
 z-index: -2;
 }
@@ -255,6 +256,7 @@ font-weight: light;
 
     .subtitle {
         margin: 0;
+        width: 300px;
         margin-top: 10px;
         margin-left: 20px;
         /* text-align: center; */
