@@ -13,14 +13,17 @@ src: url(/assets/fonts/FuturaPTLight.otf);
 font-weight: light;
 }
 
-
-
 body {
 margin: 0;
 background-color: #2e8156;
 overflow-x: hidden;
 overflow-y: auto;
 cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .site-wrapper {
