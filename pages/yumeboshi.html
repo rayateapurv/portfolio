@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apurv Rayate</title>
+    <link rel="icon" href="../assets/img/smlogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../styles/yumeboshi-style.css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+    
+<body>
+    <div class="site-wrapper">
+        <div class="nav-wrapper">
+            <div class="nav">
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="logo image">
+                </a>
+                <div class="nav-link">
+                    <a href="../index.html">work</a>  
+                    <a href="../pages/about.html">about</a>   
+                </div>  
+            </div>
+        </div> 
+    
+        <section>
+            <div class="head">
+                <h1 class="title">Yumeboshi</h1>
+                <p class="subtitle">
+                    interactive music visualizer using shaders in three.js
+                    <br>
+                    <span>Watch the generative paint drip across the page</span>
+                </p>
+            </div>
+            <div class="links">
+                <a href="https://rayateapurv.github.io/yumeboshi/" target="_blank">Try It!</a>
+                <a href="https://twisty-alder-868.notion.site/Apurv-202609223c004ac9a7d836b39147b19a" target="_blank">Process</a>
+            </div>
+            <div class="content">
+                <video controls>
+                    <source src="../assets/video/yume1.mov"/>
+                </video>
+                <p>
+                    Yumeboshi is a set of two 3D lava lamp-like blobs that react to user input (audio).
+                    The project consists of a three.js scene setup along with an interactive GUI and basic html that takes in audio input.
+                    Mesh distortion is based on audio analysis done using the WebAudio API.
+                    Visuals, consist of two separate shaders, one is a combination of noise masks and the other is a zoom blur creating a luminous effect.
+                </p>
+                <video muted controls>
+                    <source src="../assets/video/yume2.mov"/>
+                </video>
+            </div>
+        </section>
+        
+    
+        <footer>
+            <p>&copy; 2022, Apurv Rayate.</p>
+        </footer>
+    
+        <div id="main">
+    
+        </div>
+    </div>
+    
+</body>
+
+<script src="../scripts/yumeboshi.js"></script>
+
+</html> 

@@ -39,7 +39,7 @@ function draw() {
     flake.display();
   }
 
-  if (resetter > 60) {
+  if (resetter > 40) {
     clear();
     resetter = 0;
     snowflakes = [];

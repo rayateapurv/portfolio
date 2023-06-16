@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  background-color: #333333;
+  background-color: #222222;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -137,15 +137,15 @@ a:hover {
 
 .gallery {
   padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 70vh;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: -9vh;
   width: 100vl;
-  height: 150vh;
+  height: 250vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #333333;
-  /* gap: 20px; */
+  background-color: #222222;
+  /* gap: 40px; */
   /* overflow-y: auto; */
 }
 
@@ -157,9 +157,9 @@ a:hover {
   /* border-radius: 20px; */
   /* background-color: #5d5d5d; */
   width: 50%;
-  height: auto;
+  height: 20%;
   display: block;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   background-size:cover;
@@ -171,7 +171,8 @@ a:hover {
 .square-large:hover {
   -webkit-filter: none;
   filter: none;
-  transform: rotate(3deg) translate(0px, -30px);
+  /* transform: rotate(3deg) translate(0px, -30px); */
+    
 }
 
 .one {
@@ -198,16 +199,31 @@ a:hover {
   background-image: url('../assets/img/six-cover.png');
 }
 
+.seven {
+  background-image: url('../assets/img/yume-cover.png');
+}
+
+.eight {
+  background-image: url('../assets/img/smth-cover.jpg');
+}
+
+.nine {
+  background-image: url('../assets/img/nolana-cover.png');
+}
+
+.ten {
+  background-image: url('../assets/img/sap-cover.png');
+}
+
 .caption {
   font-family: futur;
   font-weight: bold;
-  margin-top: 20vh;
+  margin-top: 330px;
   color: #f2f2f2;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
-  opacity: 0;
-  background-color: #000000;
-  margin-left: 25%;
+  opacity: 1;
+  background-color: #111111;
   margin-right: 25%;
   padding-top: 5px;
   padding-left: 10px;
@@ -221,22 +237,21 @@ a:hover {
   font-weight: light;
   padding-bottom: 10px;
   color: #f2f2f2;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  opacity: 0;
-  background-color: #000000;
-  margin-left: 25%;
+  opacity: 1;
+  background-color: #111111;
   margin-right: 25%;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .square-large:hover .caption {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .square-large:hover .cap-content {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .last {
@@ -244,7 +259,7 @@ a:hover {
 }
 
 footer {
-  background-color: #333333;
+  background-color: #222222;
   padding: 20px;
   width: 100vw;
   height: 50px;
@@ -258,6 +273,7 @@ footer p {
   color: #f2f2f2;
   font-family: futur;
   font-weight: light;
+  font-size: 20px;
 }
 
 .maincan {
@@ -353,6 +369,12 @@ footer p {
   font-size: 40px;
 }
 
+#face {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
 .about-text {
   text-align: left;
   font-size: 20px;
@@ -372,7 +394,7 @@ footer p {
 
 .res-button {
   display: inline-block;
-  left: 73%;
+  left: 55%;
   position: absolute;
   border-radius: 5px;
   background-color: #03989e;

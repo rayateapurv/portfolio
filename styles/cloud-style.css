@@ -33,7 +33,7 @@ overflow-y: auto;
 
 a {
 color: #f2f2f2;
-font-family: futur;
+font-family: 'Montserrat', sans-serif;
 font-weight: light;
 text-decoration: none;
 font-size: 30px;
@@ -76,7 +76,7 @@ video {
 
 p a {
     color: #87CEEB;
-font-family: futur;
+font-family: 'Montserrat', sans-serif;
 font-weight: bold;
 text-decoration: underline;
 font-size: 20px;

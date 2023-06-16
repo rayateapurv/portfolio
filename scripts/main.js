@@ -44,3 +44,10 @@ typewriter
   .pauseFor(pause)
   .deleteChars(roles[5].length)
   .start();
+
+document.querySelector(".eight").addEventListener("click", () => {
+  window.open(
+    "https://parsons.edu/dt-2023/we-became-something-else/",
+    "_blank"
+  );
+});
