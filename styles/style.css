@@ -139,13 +139,14 @@ a:hover {
   padding-top: 60px;
   padding-left: 80px;
   padding-right: 80px;
+  padding-bottom: 45px;
   margin-top: -9vh;
   width: 100vl;
   height: 250vh;
   display: flex;
   flex-wrap: wrap;
   background-color: #222222;
-  /* gap: 40px; */
+  gap: 0.5rem;
   /* overflow-y: auto; */
 }
 
@@ -156,7 +157,7 @@ a:hover {
 .square-large {
   /* border-radius: 20px; */
   /* background-color: #5d5d5d; */
-  width: 50%;
+  width: 49.5%;
   height: 20%;
   display: block;
   transition: 0.2s ease-in-out;
@@ -164,19 +165,20 @@ a:hover {
   -webkit-background-size:cover;
   background-size:cover;
   background-position:center;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
 }
 
 .square-large:hover {
   -webkit-filter: none;
   filter: none;
+  cursor: pointer;
   /* transform: rotate(3deg) translate(0px, -30px); */
     
 }
 
 .one {
-  background-image: url('../assets/img/one-cover.png');
+  background-image: url('../assets/img/qs1.png');
 }
 
 .two {
@@ -208,24 +210,24 @@ a:hover {
 }
 
 .nine {
-  background-image: url('../assets/img/nolana-cover.png');
+  background-image: url('../assets/img/nol-cov.png');
 }
 
 .ten {
-  background-image: url('../assets/img/sap-cover.png');
+  background-image: url('../assets/img/sap-cov.png');
 }
 
 .caption {
   font-family: futur;
   font-weight: bold;
-  margin-top: 330px;
+  margin-top: 340px;
   color: #f2f2f2;
   text-align: left;
   font-size: 24px;
   opacity: 1;
-  background-color: #111111;
-  margin-right: 25%;
-  padding-top: 5px;
+  background-color: #000000;
+  /* margin-right: 25%; */
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -240,10 +242,11 @@ a:hover {
   text-align: left;
   font-size: 16px;
   opacity: 1;
-  background-color: #111111;
-  margin-right: 25%;
+  background-color: #000000;
+  /* margin-right: 25%; */
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 .square-large:hover .caption {
@@ -261,6 +264,7 @@ a:hover {
 footer {
   background-color: #222222;
   padding: 20px;
+  /* padding-top: 50px; */
   width: 100vw;
   height: 50px;
   display: flex;
