@@ -5,100 +5,224 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apurv Rayate</title>
-    <link rel="icon" href="../assets/img/smlogo.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css" media="screen" />
+    <link rel="icon" href="../assets/image/smlogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');</style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
 </head>
     
 <body>
-    
-    <div class="site-wrapper">
-        <div class="nav-wrapper">
-            <div class="nav">
-                <a href="../index.html">
-                    <img class="logo" src="../assets/img/logo.png" alt="logo image">
-                </a>
-                <div class="nav-link">
-                    <a href="../index.html" class="active">work</a>  
-                    <a href="../pages/about.html">about</a>   
-                </div>  
+
+    <div class="nav">
+        <div class="logo-div">
+            <a href="../">
+                <img class="logo" src="../assets/image/logo.png" alt="logo image">
+            </a> 
+        </div>
+        <div class="nav-socials">
+            <a href="mailto:rayaa238@newschool.edu" target="_blank" class="fa fa-envelope fa-lg"></a>
+            <a href="https://www.linkedin.com/in/apurv-rayate" target="_blank" class="fa fa-linkedin fa-lg"></a>  
+            <a href="https://github.com/rayateapurv" target="_blank" class="fa fa-github fa-lg"></a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="intro">
+            <h1>
+                Apurv Rayate
+            </h1>
+            <h2>
+                Software Developer, Helsinki, Finland
+            </h2>
+            <p>
+                I am currently completing my Masters in <span>New Media</span> at the <span>Aalto Media Lab</span> in Finland.
+                I make apps, games and data visualizations primarily using React, Unity and generative AI tools.
+                I specialise in systems thinking, rapid prototyping and cross-disciplinary collaboration.
+                <br><br>
+                <span class="mobilespan">Most recently at <span>Mastercard</span>, I focused on building internal tools and data dashboards; simplifying
+                decision making for non-technical staff and customers and prototyped the use of AI in analysing and 
+                presenting complex financial data to stakeholders.
+                <br><br>
+                Outside of work, you can find me playing Pokemon Go, taking long walks in the rain or having weird conversations 
+                with ChatGPT.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <div class="cover">
+        <img class="cover_img" src="./assets/image/pathmakercover.gif" alt="cover">
+    </div>
+
+    <section>
+        <div class="work">
+            <h1>Recent Work</h1>
+            <div class="filters">
+                <button class="sel" id="allbtn">All</button>
+                <button id="profbtn">Professional</button>
+                <button id="persbtn">Personal</button>
             </div>
-        
-            <div class="nav-socials">
-                <a href="mailto:rayaa238@newschool.edu" target="_blank" class="fa fa-envelope fa-lg"></a>
-                <a href="https://www.linkedin.com/in/apurv-rayate" target="_blank" class="fa fa-linkedin fa-lg"></a>  
-                <a href="https://github.com/rayateapurv" target="_blank" class="fa fa-github fa-lg"></a>
+            <div class="filters">
+                <button id="databtn">Data</button>
+                <button id="aibtn">AI</button>
+                <button id="gamebtn">Games</button>
+            </div>
+            <div onclick="location.href='./work/pathmaker/';" class="project pers ai game trig selected" id="pathmaker">
+                <h2>Pathmaker</h2>
+                <p>Puzzle Game + Computer Vision</p>
+            </div>
+            <div onclick="location.href='./work/tinycriminals/';" class="project pers game" id="tc">
+                <h2>Tiny Criminals</h2>
+                <p>Infinite Runner + Cozy Game</p>
+            </div>
+            <div onclick="location.href='./work/preacher/';" class="project pers ai" id="msp">
+                <h2>Manic Street Preacher</h2>
+                <p>Religious Text Generation + Voice AI</p>
+            </div>
+            <div onclick="location.href='./work/photocrit/';" class="project pers data game" id="pcrit">
+                <h2>PhotoCrit: Fish Edition</h2>
+                <p>Photography Game + Alt Controller</p>
+            </div>
+            <div onclick="location.href='./work/mastercard/';" class="project prof data ai" id="mc">
+                <h2>Mastercard</h2>
+                <p>Front-End Dev + AI Prototyping</p>
+            </div>
+            <div onclick="location.href='./work/somethingelse/';" class="project pers ai game" id="wbse">
+                <h2>We Became Something Else</h2>
+                <p>Experimental Games + AI + Procedural Generation</p>
+            </div>
+            <div onclick="location.href='./work/sap/';" class="project prof data ai" id="sap">
+                <h2>SAP Design Innovation</h2>
+                <p>Front-End Dev + UX + Research Experiments</p>
+            </div>
+            <div onclick="location.href='./work/cloudtheory/';" class="project prof ai game" id="ct">
+                <h2>Cloud Theory</h2>
+                <p>GPT-2 Custom Model + Voice AI + Narrative Game</p>
+            </div>
+            <div onclick="location.href='./work/forestclearing/';" class="project pers game" id="fc">
+                <h2>Forest Clearing</h2>
+                <p>Multiplayer Game + P5.js Website</p>
+            </div>
+            <div onclick="location.href='./work/corporacaelestia/';" class="project pers data" id="cc">
+                <h2>Corpora Caelestia</h2>
+                <p>Data Visualisation + Three.js Website</p>
             </div>
         </div>
+    </section>
+
+    <section class="skills">     
+        <div>
+            <h1>Skills</h1>
+        </div>   
+        <div class="skillbox first">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"/></svg>
+            <p>Javascript</p>
+        </div>
+        <div class="skillbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M482.2 241.2C476.8 239.4 471.4 237.7 466 236.1C466.9 232.4 467.7 228.7 468.5 225C480.8 165.4 472.7 117.5 445.4 101.7C419.1 86.6 376.2 102.3 332.8 140.1C328.5 143.8 324.3 147.7 320.3 151.6C317.6 149 314.8 146.4 312 143.9C266.5 103.5 220.9 86.5 193.6 102.4C167.4 117.6 159.6 162.7 170.6 219.1C171.7 224.7 172.9 230.2 174.3 235.8C167.9 237.6 161.6 239.6 155.7 241.7C102.3 260.2 64 289.4 64 319.6C64 350.8 104.8 382.1 160.3 401.1C164.8 402.6 169.3 404.1 173.9 405.4C172.4 411.4 171.1 417.3 169.9 423.4C159.4 478.9 167.6 522.9 193.8 538C220.8 553.6 266.2 537.6 310.4 498.9C313.9 495.8 317.4 492.6 320.9 489.2C325.3 493.5 329.9 497.6 334.5 501.6C377.3 538.4 419.6 553.3 445.7 538.2C472.7 522.6 481.5 475.3 470.1 417.7C469.2 413.3 468.2 408.8 467.1 404.2C470.3 403.3 473.4 402.3 476.5 401.3C534.2 382.2 576 351.3 576 319.6C576 289.3 536.6 259.9 482.2 241.2zM346.9 156.3C384.1 123.9 418.8 111.2 434.6 120.3C451.5 130 458 169.2 447.4 220.7C446.7 224.1 446 227.4 445.1 230.7C422.9 225.7 400.4 222.1 377.8 220.1C364.8 201.5 350.6 183.7 335.2 167C339.1 163.3 342.9 159.8 346.9 156.3zM231.2 371.5C236.3 380.2 241.5 388.9 247 397.4C231.4 395.7 215.9 393.2 200.6 389.9C205 375.5 210.5 360.6 216.9 345.4C221.5 354.2 226.2 362.9 231.2 371.5zM200.9 251.2C215.3 248 230.6 245.4 246.5 243.4C241.2 251.7 236 260.2 231.1 268.8C226.2 277.3 221.4 286 216.9 294.8C210.6 279.9 205.3 265.3 200.9 251.2zM228.3 320.1C234.9 306.3 242.1 292.8 249.7 279.5C257.3 266.2 265.5 253.3 274.1 240.6C289.1 239.5 304.4 238.9 320 238.9C335.6 238.9 351 239.5 365.9 240.6C374.4 253.2 382.5 266.1 390.2 279.3C397.9 292.5 405.1 306 411.9 319.7C405.2 333.5 398 347.1 390.3 360.5C382.7 373.8 374.6 386.7 366.1 399.5C351.2 400.6 335.7 401.1 320 401.1C304.3 401.1 289.1 400.6 274.4 399.7C265.7 387 257.5 374 249.8 360.7C242.1 347.4 235 333.9 228.3 320.1zM408.9 371.3C414 362.5 418.8 353.6 423.5 344.6C429.9 359.1 435.5 373.8 440.4 388.9C424.9 392.4 409.2 395.1 393.4 396.9C398.8 388.5 403.9 379.9 408.9 371.3zM423.3 294.8C418.6 286 413.8 277.2 408.8 268.6C403.9 260.1 398.8 251.7 393.5 243.4C409.6 245.4 425 248.1 439.4 251.4C434.8 266.2 429.4 280.6 423.3 294.8zM320.2 182.3C330.7 193.7 340.6 205.7 349.8 218.1C330 217.2 310.1 217.2 290.3 218.1C300.1 205.2 310.2 193.2 320.2 182.3zM204.2 121C221 111.2 258.3 125.2 297.6 160C300.1 162.2 302.6 164.6 305.2 167C289.7 183.7 275.4 201.5 262.3 220.1C239.7 222.1 217.3 225.6 195.1 230.5C193.8 225.4 192.7 220.2 191.6 215C182.2 166.6 188.4 130.1 204.2 121zM179.7 384.6C175.5 383.4 171.4 382.1 167.3 380.7C146 374 121.8 363.4 104.3 349.5C94.2 342.5 87.4 331.7 85.5 319.6C85.5 301.3 117.1 277.9 162.7 262C168.4 260 174.2 258.2 180 256.5C186.8 278.2 195 299.5 204.5 320.1C194.9 341 186.6 362.6 179.7 384.6zM296.3 482.6C279.8 497.7 260.7 509.7 239.9 517.9C228.8 523.2 216 523.7 204.6 519.2C188.7 510 182.1 474.7 191.1 427.2C192.2 421.6 193.4 416 194.8 410.5C217.2 415.3 239.8 418.6 262.7 420.3C275.9 439 290.4 456.9 305.9 473.7C302.7 476.8 299.5 479.8 296.3 482.6zM320.8 458.3C310.6 447.3 300.4 435.1 290.5 422C300.1 422.4 310 422.6 320 422.6C330.3 422.6 340.4 422.4 350.4 421.9C341.2 434.6 331.3 446.7 320.8 458.3zM451.5 488.3C450.6 500.5 444.6 511.9 435 519.6C419.1 528.8 385.2 516.8 348.6 485.4C344.4 481.8 340.2 477.9 335.9 473.9C351.2 457 365.3 439.1 378.1 420.3C401 418.4 423.8 414.9 446.3 409.8C447.3 413.9 448.2 418 449 422C453.9 443.6 454.7 466.1 451.5 488.3zM469.7 380.8C466.9 381.7 464.1 382.6 461.2 383.4C454.2 361.6 445.6 340.3 435.7 319.6C445.3 299.2 453.4 278.2 460.2 256.7C465.4 258.2 470.4 259.8 475.2 261.4C521.8 277.4 554.5 301.2 554.5 319.4C554.5 339 519.6 364.3 469.7 380.8zM320 365.8C345.3 365.8 365.8 345.3 365.8 320C365.8 294.7 345.3 274.2 320 274.2C294.7 274.2 274.2 294.7 274.2 320C274.2 345.3 294.7 365.8 320 365.8z"/></svg>
+            <p>React</p>
+        </div>
+        <div class="skillbox">
+            <svg class="tailwind" fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Tailwind CSS icon</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path></g></svg>       
+            <p>Tailwind</p>
+        </div>
+        <div class="skillbox">
+            <svg class="three" fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4"><path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/><path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/><path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/><path d="m63.458 38.153 10.724 43.465-43.008-12.346z"/><path d="m149.47 62.93 10.724 43.465-43.008-12.346z"/><path d="m84.915 125.06 10.724 43.465-43.008-12.346z"/></g></svg>            
+            <p>Three.js</p>
+        </div>
+        <div class="skillbox">
+            <svg class="framer" fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Framer icon</title><path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"></path></g></svg>            
+            <p>Framer</p>
+        </div>
+        <div class="skillbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M339.6 155.6L419.7 202.4C422.6 204 422.7 208.6 419.7 210.2L324.5 265.8C321.6 267.5 318.2 267.4 315.5 265.8L220.3 210.2C217.4 208.6 217.3 203.9 220.3 202.4L300.4 155.6L300.4 64L96 183.4L96 422.2L174.4 376.4L174.4 282.8C174.3 279.5 178.2 277.1 181.1 278.9L276.3 334.5C279.2 336.2 280.8 339.2 280.8 342.3L280.8 453.5C280.9 456.8 277 459.2 274.1 457.4L194 410.8L115.6 456.6L320 576L524.4 456.6L446 410.8L365.9 457.6C363.1 459.3 359.1 457.1 359.2 453.7L359.2 342.5C359.2 339.2 361 336.2 363.7 334.7L458.9 279C461.7 277.3 465.7 279.5 465.6 282.9L465.6 376.5L544 422.3L544 183.5L339.6 64.1L339.6 155.7z"/></svg>
+            <p>Unity</p>
+        </div>
+        <div class="skillbox">
+            <svg class="godot" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.745 0.917c-1.458 0.328-2.906 0.781-4.266 1.464 0.031 1.198 0.109 2.344 0.266 3.505-0.526 0.339-1.078 0.63-1.568 1.026-0.5 0.38-1.010 0.75-1.464 1.198-0.906-0.594-1.859-1.156-2.849-1.651-1.063 1.141-2.052 2.375-2.865 3.755 0.609 0.99 1.25 1.911 1.938 2.792h0.016v8.474c0.016 0 0.031 0 0.047 0.005l5.198 0.5c0.271 0.026 0.484 0.245 0.5 0.521l0.161 2.292 4.531 0.323 0.313-2.115c0.042-0.276 0.276-0.479 0.552-0.479h5.484c0.276 0 0.51 0.203 0.552 0.479l0.313 2.115 4.531-0.323 0.161-2.292c0.016-0.276 0.229-0.495 0.505-0.521l5.193-0.5c0.016 0 0.031-0.005 0.047-0.005v-8.474h0.021c0.688-0.875 1.323-1.802 1.932-2.792-0.807-1.38-1.802-2.615-2.865-3.755-0.984 0.495-1.943 1.057-2.849 1.651-0.453-0.448-0.958-0.818-1.458-1.198-0.495-0.396-1.047-0.688-1.573-1.026 0.156-1.161 0.234-2.307 0.266-3.505-1.354-0.682-2.802-1.135-4.266-1.464-0.583 0.984-1.115 2.047-1.578 3.083-0.552-0.089-1.109-0.125-1.661-0.13h-0.026c-0.552 0.005-1.109 0.042-1.661 0.13-0.464-1.036-0.995-2.099-1.583-3.083zM8.635 13.323c1.729 0 3.13 1.406 3.13 3.135s-1.401 3.13-3.13 3.13c-1.729 0-3.13-1.401-3.13-3.13s1.401-3.135 3.13-3.135zM23.365 13.323c1.729 0 3.13 1.406 3.13 3.135s-1.401 3.13-3.13 3.13c-1.729 0-3.13-1.401-3.13-3.13s1.401-3.135 3.13-3.135zM8.932 14.568c-1.146 0-2.078 0.927-2.078 2.078 0 1.146 0.932 2.073 2.078 2.073 1.151 0 2.083-0.927 2.083-2.073 0-1.151-0.932-2.078-2.083-2.078zM23.063 14.568c-1.146 0-2.078 0.927-2.078 2.078 0 1.146 0.932 2.073 2.078 2.073 1.151 0 2.078-0.927 2.078-2.073 0-1.151-0.927-2.078-2.078-2.078zM16 15.172c0.557 0 1.010 0.406 1.010 0.911v2.885c0 0.505-0.453 0.917-1.010 0.917s-1.010-0.411-1.010-0.917v-2.885c0-0.505 0.453-0.911 1.010-0.911zM1.948 22.599c0 0.505 0.005 1.052 0.005 1.161 0 4.938 6.26 7.307 14.036 7.333h0.021c7.776-0.026 14.031-2.396 14.031-7.333 0-0.109 0.005-0.656 0.010-1.161l-4.672 0.453-0.161 2.307c-0.021 0.276-0.24 0.5-0.516 0.516l-5.578 0.396c-0.271 0-0.51-0.198-0.552-0.474l-0.318-2.156h-4.516l-0.318 2.156c-0.042 0.286-0.297 0.495-0.594 0.474l-5.531-0.396c-0.276-0.021-0.5-0.24-0.521-0.516l-0.156-2.307-4.672-0.448z"></path> </g></svg>           
+            <p class="go">Godot</p>
+        </div>
+        <div class="skillbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M260.4 249.8L260.4 201.2C260.4 197.1 261.9 194 265.5 192L363.3 135.7C376.6 128 392.5 124.4 408.9 124.4C470.3 124.4 509.3 172 509.3 222.7C509.3 226.3 509.3 230.4 508.8 234.5L407.3 175.1C401.2 171.5 395 171.5 388.9 175.1L260.4 249.8zM488.7 439.2L488.7 323C488.7 315.8 485.6 310.7 479.5 307.1L351 232.4L393 208.3C396.6 206.3 399.7 206.3 403.2 208.3L501 264.7C529.2 281.1 548.1 315.9 548.1 349.7C548.1 388.6 525.1 424.5 488.7 439.3L488.7 439.3zM230.2 336.8L188.2 312.2C184.6 310.2 183.1 307.1 183.1 303L183.1 190.4C183.1 135.6 225.1 94.1 281.9 94.1C303.4 94.1 323.4 101.3 340.3 114.1L239.4 172.5C233.3 176.1 230.2 181.2 230.2 188.4L230.2 336.9L230.2 336.9zM320.6 389L260.4 355.2L260.4 283.5L320.6 249.7L380.8 283.5L380.8 355.2L320.6 389zM359.3 544.7C337.8 544.7 317.8 537.5 300.9 524.7L401.8 466.3C407.9 462.7 411 457.6 411 450.4L411 301.9L453.5 326.5C457.1 328.5 458.6 331.6 458.6 335.7L458.6 448.3C458.6 503.1 416.1 544.6 359.3 544.6L359.3 544.6zM237.8 430.5L140.1 374.2C111.9 357.8 93 323 93 289.2C93 249.8 116.6 214.4 152.9 199.6L152.9 316.3C152.9 323.5 156 328.6 162.1 332.2L290.1 406.4L248.1 430.5C244.5 432.5 241.4 432.5 237.9 430.5zM232.2 514.5C174.3 514.5 131.8 471 131.8 417.2C131.8 413.1 132.3 409 132.8 404.9L233.7 463.3C239.8 466.9 246 466.9 252.1 463.3L380.6 389.1L380.6 437.7C380.6 441.8 379.1 444.9 375.5 446.9L277.7 503.2C264.4 510.9 248.5 514.5 232.1 514.5L232.1 514.5zM359.2 575.4C421.2 575.4 472.9 531.4 484.6 473C541.9 458.1 578.8 404.4 578.8 349.6C578.8 313.8 563.4 278.9 535.8 253.9C538.4 243.1 539.9 232.4 539.9 221.6C539.9 148.4 480.5 93.6 411.9 93.6C398.1 93.6 384.8 95.6 371.5 100.3C348.5 77.8 316.7 63.4 281.9 63.4C219.9 63.4 168.2 107.4 156.5 165.8C99.2 180.6 62.3 234.4 62.3 289.2C62.3 325 77.7 359.9 105.3 384.9C102.7 395.7 101.2 406.4 101.2 417.2C101.2 490.4 160.6 545.2 229.2 545.2C243 545.2 256.3 543.2 269.6 538.5C292.6 561 324.4 575.4 359.2 575.4z"/></svg>
+            <p>GPT/Sora</p>
+        </div>
+        <div class="skillbox">
+            <svg class="gemini" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><radialGradient id="a" cx="-37.129" cy="650.866" r="32" gradientTransform="matrix(16.1326 5.4553 43.7005 -129.2322 -27793.309 84523.438)" gradientUnits="userSpaceOnUse"><stop offset=".067" style="stop-color:#9168c0"/><stop offset=".343" style="stop-color:#5684d1"/><stop offset=".672" style="stop-color:#1ba1e3"/></radialGradient><path d="M512 256.5c-137.5 8.4-247.1 118-255.5 255.5h-1C247.1 374.5 137.5 264.9 0 256.5v-1c137.5-8.4 247.1-118 255.5-255.5h1c8.4 137.5 118 247.1 255.5 255.5z" style="fill:url(#a)"/></svg>
+            <p>Gemini</p>
+        </div>
+        <div class="skillbox">
+            <svg class="mediapipe" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"><path d="M2.182 0C1 0 .037.94.002 2.114L0 2.182v6.545a2.182 2.182 0 0 0 4.364 0V2.182A2.182 2.182 0 0 0 2.182 0Zm6.545 0c-1.182 0-2.145.94-2.18 2.114l-.002.068v13.09a2.182 2.182 0 0 0 4.364 0V2.183A2.182 2.182 0 0 0 8.727 0Zm6.546 0a2.182 2.182 0 0 0-2.182 2.182 2.182 2.182 0 0 0 2.182 2.182 2.182 2.182 0 0 0 2.182-2.182A2.182 2.182 0 0 0 15.273 0Zm6.545 0c-1.182 0-2.145.94-2.18 2.114l-.002.068v19.636a2.182 2.182 0 0 0 4.364 0V2.182A2.182 2.182 0 0 0 21.818 0Zm-6.545 6.545c-1.183 0-2.145.94-2.181 2.114l-.001.068v13.091a2.182 2.182 0 0 0 4.364 0V8.728a2.182 2.182 0 0 0-2.182-2.183zM2.182 13.091c-1.182 0-2.145.94-2.18 2.114L0 15.273v6.545a2.182 2.182 0 0 0 4.364 0v-6.545a2.182 2.182 0 0 0-2.182-2.182zm6.545 6.545a2.182 2.182 0 0 0-2.182 2.182A2.182 2.182 0 0 0 8.727 24a2.182 2.182 0 0 0 2.182-2.182 2.182 2.182 0 0 0-2.182-2.182Z"/></svg>
+            <p class="go">Mediapipe</p>
+        </div>
+    </section>
+
+    <section class="vita">
+        <h1>Vita</h1>
+        <a  class="download" href="../assets/file/Resume_Apurv_Rayate.pdf" download="Resume_Apurv_Rayate"><button>Download</button></a>
+        <h2>Experience</h2>
+        <p>
     
-        <!-- <div class="mast-wrapper">
-            <section class="masthead">
-                <div class="vid-cover"></div>
-                <video autoplay muted loop>
-                    <source src="../assets/video/black.mov"/>
-                </video>
-                <div class="cap">
-                    <h1 class="mast">
-                        Hi! I'm Apurv Rayate.
-                        <br>
-                        I'm <span id="role">a creative technologist</span>.
-                    </h1>
-                </div> 
-            </section>
-        </div>  -->
-    
-        <section class="gallery">
-            <div class="square-large eight">
-                <h1 class="caption">We Became Something Else</h1>
-                <p class="cap-content">collection of endless speculative games (bachelor's thesis)</p>
-            </div>
-            <div onclick="location.href='./pages/sap.html';" class="square-large ten">
-                <h1 class="caption">SAP Labs Internship</h1>
-                <p class="cap-content">data-driven business decision simulator in Framer</p>
-            </div>
-            <div onclick="location.href='./pages/tree-human-generator.html';" class="square-large two">
-                <h1 class="caption">Tree Human Generator</h1>
-                <p class="cap-content">speculative tree human cyborg generator in three.js</p>
-            </div>
-            <div onclick="location.href='./pages/cloud-theory.html';" class="square-large three">
-                <h1 class="caption">Cloud Theory</h1>
-                <p class="cap-content">GPT-based cloud watching game in Unity</p>
-            </div>
-            <div onclick="location.href='./pages/forest-clearing.html';" class="square-large six">
-                <h1 class="caption">A Forest Clearing</h1>
-                <p class="cap-content">multiplayer simulation game about deforestation</p>
-            </div>
-            <div onclick="location.href='./pages/nolana.html';" class="square-large nine">
-                <h1 class="caption">Nolana Health</h1>
-                <p class="cap-content">Product UX for Cornell Tech Studio</p>
-            </div>  
-            <div onclick="location.href='./pages/emulsion.html';" class="square-large four">
-                <h1 class="caption">Emulsion</h1>
-                <p class="cap-content">interactive audiovisual fluid simulation with TouchDesigner</p>
-            </div>      
-            <div onclick="location.href='./pages/corpora-caelestia.html';" class="square-large five">
-                <h1 class="caption">Corpora Caelestia</h1>
-                <p class="cap-content">data visualization of satellites in GEO orbit</p>
-            </div>
-            <div onclick="location.href='./pages/q-sweeper.html';" class="square-large one">
-                <h1 class="caption">Q-Sweeper</h1>
-                <p class="cap-content">minesweeper redesigned using quantum computing</p>
-            </div>
-            <div onclick="location.href='./pages/yumeboshi.html';" class="square-large seven">
-                <h1 class="caption">Yumeboshi</h1>
-                <p class="cap-content">interactive music visualizer using shaders in three.js</p>
-            </div>   
-        </section>
-    
-        <footer>
-            <p>&copy; 2023, Apurv Rayate.</p>
-        </footer>
-    </div>
-    
+            <span>2024-2025</span> <br>
+            Creative Tech Assistant <br> 
+            Aalto Media Lab, Espoo, Finland (Part-Time)
+
+            <br> <br>
+            <span>2023-2024</span> <br>
+            Software Developer <br> 
+            Mastercard, New York City, US (Remote, Contract)
+            
+            <br> <br>
+            <span>2022-2023</span> <br>
+            Design Technologist <br>
+            SAP.io, Palo Alto, US (Remote, Part-Time)
+            
+            <br> <br>
+            <span>2021-2023</span> <br>
+            Unity Developer / Research Assistant <br> 
+            Parsons PETLab, New York City, US (Part-Time)
+
+            <br> <br>
+            <span>2021-2022</span> <br>
+            DT Study Tutor <br> 
+            Parsons Design + Technology, New York City, US (Part-Time)
+        </p>
+        <h2>Education</h2>
+        <p>
+            <span>2024-Present</span> <br>
+            MA New Media <br> 
+            Aalto University, Espoo, Finland 
+            
+            <br> <br>
+            <span>2019-2023</span> <br>
+            BFA Design + Technology <br>
+            Parsons School of Design, New York City, US 
+            
+            <br> <br>
+            <span>2021-2022</span> <br>
+            Product + PiTech Studio <br> 
+            Cornell Tech, New York City, US 
+                   
+        </p>
+        <h2>Awards</h2>
+        <p>
+            Academic and Departmental Honors along with my BFA <br>
+            Overall Winner - Parsons DT Game Jam 2022 <br>
+            Special Mention, Visual Arts - IBM Quantum Jam 2021
+        </p>
+        <h2>Contact</h2>
+        <p class="last">
+            You can contact me at rayateapurv@gmail.com
+            or connect with me on LinkedIn.
+            <br><br><br>
+            &copy; 2025, Apurv Rayate.
+        </p>
+    </section>
 </body>
 
-<script src="../scripts/main.js"></script>
 
 </html> 
+
