@@ -1,36 +1,12 @@
 gsap.registerPlugin(ScrollTrigger) 
 
-// const getOffsetTop = (elem) => {
-// 	var distance = 0;
-
-// 	if (elem.offsetParent) {
-// 		do {
-// 			distance += elem.offsetTop;
-// 			elem = elem.offsetParent;
-// 		} while (elem);
-// 	}
-// 	return distance < 0 ? 0 : distance;
-// };
-
-// let workPos = document.querySelector(".work")
-// let offsetTop = getOffsetTop(workPos)
-
-
-// let tl1a = gsap.timeline({defaults: {duration: 0.5, ease: "sine.inOut", repeat: -1, yoyo: true }})
-// tl1a.fromTo("#first", {y: -3}, {y: 3})
-
-// let tl1b = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".introp",
-//         start: "center center",
-//         scrub: 4,
-//         onEnter: () => {tl1a.pause()},
-//         onEnterBack: () => {tl1a.resume()}
-//     }
-// })
-// tl1b.to("#first", {y: (offsetTop - 150), duration: 20})
-
-// document.querySelector(".skills").style.display = "none"
+var mq = window.matchMedia( "(min-width: 320px) and (max-width: 768px)" );
+if (mq.matches) {
+    document.querySelector("#pathmaker").classList.remove("selected")
+}
+else {
+    document.querySelector("#pathmaker").classList.add("selected")
+}
 
 let tl = gsap.timeline({
     scrollTrigger: {
