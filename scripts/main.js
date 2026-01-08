@@ -1,21 +1,21 @@
 gsap.registerPlugin(ScrollTrigger) 
 
-var mq = window.matchMedia( "(min-width: 320px) and (max-width: 768px)" );
-if (mq.matches) {
-    document.querySelector("#tc").classList.remove("selected")
-}
-else {
-    document.querySelector("#tc").classList.add("selected")
-}
+// var mq = window.matchMedia( "(min-width: 320px) and (max-width: 768px)" );
+// if (mq.matches) {
+//     document.querySelector("#tc").classList.remove("selected")
+// }
+// else {
+//     document.querySelector("#tc").classList.add("selected")
+// }
 
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".trig",
-        start: "center center",
-        scrub: 1,
-    }
-})
-tl.to(".cover", {y: 320, duration: 8})
+// let tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".trig",
+//         start: "center center",
+//         scrub: 1,
+//     }
+// })
+// tl.to(".cover", {y: 320, duration: 8})
 
 document.querySelector("#allbtn").addEventListener("click", () => {
     document.querySelectorAll(".filters button").forEach((p) => {
@@ -111,13 +111,13 @@ let workSection = document.querySelector(".work")
 //     document.querySelector("#pathmaker").classList.add("selected")
 // })
 
-document.querySelector("#tc").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/tccover.gif")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#tc").classList.add("selected")
-})
+// document.querySelector("#tc").addEventListener("mouseover", () => {
+//     //coverImg.setAttribute("src", "./assets/image/tccover.gif")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#tc").classList.add("selected")
+// })
 
 // document.querySelector("#msp").addEventListener("mouseover", () => {
 //     coverImg.setAttribute("src", "./assets/image/mspcover.jpg")
@@ -127,58 +127,58 @@ document.querySelector("#tc").addEventListener("mouseover", () => {
 //     document.querySelector("#msp").classList.add("selected")
 // })
 
-document.querySelector("#pcrit").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/pcritcover.jpg")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#pcrit").classList.add("selected")
-})
+// document.querySelector("#pcrit").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/pcritcover.jpg")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#pcrit").classList.add("selected")
+// })
 
-document.querySelector("#mc").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/mccover.png")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#mc").classList.add("selected")
-})
+// document.querySelector("#mc").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/mccover.png")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#mc").classList.add("selected")
+// })
 
-document.querySelector("#wbse").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/wbsecover.gif")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#wbse").classList.add("selected")
-})
+// document.querySelector("#wbse").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/wbsecover.gif")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#wbse").classList.add("selected")
+// })
 
-document.querySelector("#sap").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/sapcover.png")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#sap").classList.add("selected")
-})
+// document.querySelector("#sap").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/sapcover.png")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#sap").classList.add("selected")
+// })
 
-document.querySelector("#ct").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/ctcover.gif")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#ct").classList.add("selected")
-})
+// document.querySelector("#ct").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/ctcover.gif")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#ct").classList.add("selected")
+// })
 
-document.querySelector("#fc").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/fccover.gif")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#fc").classList.add("selected")
-})
+// document.querySelector("#fc").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/fccover.gif")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#fc").classList.add("selected")
+// })
 
-document.querySelector("#cc").addEventListener("mouseover", () => {
-    coverImg.setAttribute("src", "./assets/image/cccover.gif")
-    document.querySelectorAll(".project").forEach((p) => {
-        p.classList.remove("selected")
-    })
-    document.querySelector("#cc").classList.add("selected")
-})
+// document.querySelector("#cc").addEventListener("mouseover", () => {
+//     coverImg.setAttribute("src", "./assets/image/cccover.gif")
+//     document.querySelectorAll(".project").forEach((p) => {
+//         p.classList.remove("selected")
+//     })
+//     document.querySelector("#cc").classList.add("selected")
+// })
